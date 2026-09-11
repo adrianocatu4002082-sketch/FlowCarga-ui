@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111111;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.perfil-page {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  padding: 0 20px 90px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.perfil-header {
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perfil-header h1 {
+  margin: 0;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.header-button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #111;
+
+  cursor: pointer;
+}
+
+/* =========================
+   PERFIL
+========================= */
+
+.profile-info {
+  display: flex;
+  align-items: center;
+
+  margin-top: 26px;
+  margin-left: 1px;
+}
+
+/* Avatar */
+
+.avatar {
+  width: 105px;
+  height: 105px;
+
+  position: relative;
+
+  border: 4px solid #242122;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #fff;
+}
+
+.avatar-head {
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  top: 17px;
+  left: 29px;
+
+  border-radius: 50%;
+
+  background: #242122;
+}
+
+.avatar-body {
+  position: absolute;
+
+  width: 70px;
+  height: 48px;
+
+  left: 14px;
+  bottom: -5px;
+
+  border-radius: 40px 40px 0 0;
+
+  background: #242122;
+}
+
+/* Dados do usuário */
+
+.profile-data {
+  margin-left: 26px;
+}
+
+.profile-data h2 {
+  margin: 0 0 5px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.profile-data p {
+  margin: 0 0 8px;
+
+  font-size: 14px;
+}
+
+.status {
+  height: 21px;
+  min-width: 104px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0 7px;
+
+  background: #8cf08c;
+
+  border-radius: 7px;
+
+  color: #258b43;
+}
+
+.status span {
+  font-size: 13px;
+}
+
+/* =========================
+   DIVISOR
+========================= */
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  margin-top: 29px;
+
+  background: #dddddd;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.data-section {
+  margin-top: 21px;
+  padding-left: 8px;
+}
+
+.data-section h3 {
+  margin: 0 0 20px;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.data-row {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 9px;
+
+  font-size: 14px;
+}
+
+.data-row strong {
+  width: 95px;
+
+  font-weight: 700;
+}
+
+.data-row span,
+.data-row a {
+  color: #8b8b8b;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.data-row a {
+  text-decoration: underline;
+}
+
+/* =========================
+   VEÍCULO
+========================= */
+
+.vehicle-section {
+  margin-top: 68px;
+}
+
+.vehicle-section h3 {
+  margin-bottom: 21px;
+}
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 69px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 9px;
+
+  background: #ffffff;
+}
+
+.bottom-nav button {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #050505;
+
+  cursor: pointer;
+}
+
+.bottom-nav button svg {
+  width: 29px;
+  height: 29px;
+
+  stroke-width: 1.9;
+}
+
+/* Item ativo */
+
+.bottom-nav button.active {
+  width: 39px;
+  height: 39px;
+
+  border-radius: 50%;
+
+  background: #0879ed;
+
+  color: #ffffff;
+}
+
+.bottom-nav button.active svg {
+  width: 27px;
+  height: 27px;
+}
