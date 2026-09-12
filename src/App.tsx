@@ -3,6 +3,7 @@ import Carteira from './carteira/carteira';
 import Login from './login/login';
 import Perfil from './perfil/perfil';
 import { JSX, useState } from 'react';
+import Rastreamento from './rastreamento/rastreamento';
 
 function App() {
   const [component, setComponent] = useState<string>('login');
@@ -11,6 +12,7 @@ function App() {
     login: <Login onLoginSuccess={() => setComponent('perfil')} />,
     perfil: <Perfil clickCarteira={() => setComponent('carteira')} clickHome={() => setComponent('home')} clickPerfil={() => setComponent('perfil')} clickMaps={() => setComponent('maps')} clickPedidos={() => setComponent('pedidos')} />,
     carteira: <Carteira clickCarteira={() => setComponent('carteira')} clickHome={() => setComponent('home')} clickPerfil={() => setComponent('perfil')} clickMaps={() => setComponent('maps')} clickPedidos={() => setComponent('pedidos')} />,
+    maps: <Rastreamento clickCarteira={() => setComponent('carteira')} clickHome={() => setComponent('home')} clickPerfil={() => setComponent('perfil')} clickRastreamento={() => setComponent('maps')} clickPedidos={() => setComponent('pedidos')} />,
   };
 
   return (

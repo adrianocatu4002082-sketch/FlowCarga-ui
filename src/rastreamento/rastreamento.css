@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #080808;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.rastreamento-page {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  padding: 0 13px 85px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.rastreamento-header {
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rastreamento-header h1 {
+  margin: 0;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.header-button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #000;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.tracking-status {
+  width: 104px;
+  height: 21px;
+
+  margin-top: 8px;
+  margin-left: 4px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0 6px;
+
+  border-radius: 7px;
+
+  background: #8cf08c;
+
+  color: #258b43;
+
+  font-size: 10px;
+}
+
+.tracking-status svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   MAPA
+========================= */
+
+.map-container {
+  width: 100%;
+  height: 250px;
+
+  margin-top: 8px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* =========================
+   ROTA
+========================= */
+
+.route-card {
+  width: 100%;
+  height: 322px;
+
+  margin-top: 14px;
+
+  padding: 25px 20px;
+
+  border: 2px solid #b8b8b8;
+
+  border-radius: 10px;
+
+  background: #fff;
+}
+
+
+/* =========================
+   ITEM DA ROTA
+========================= */
+
+.route-item {
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+}
+
+.route-indicator {
+  width: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   PONTOS
+========================= */
+
+.route-dot {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+.route-dot.completed {
+  background: #16a957;
+}
+
+.route-dot.current {
+  background: #075df5;
+}
+
+
+/* =========================
+   LINHA
+========================= */
+
+.route-line {
+  width: 3px;
+  height: 160px;
+
+  background: #16a957;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.route-content {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 4px;
+}
+
+.route-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.route-info strong {
+  font-size: 16px;
+
+  line-height: 19px;
+}
+
+.route-info span {
+  margin-top: 1px;
+
+  font-size: 12px;
+
+  color: #999;
+}
+
+.route-info small {
+  font-size: 11px;
+
+  color: #b7b7b7;
+}
+
+
+/* =========================
+   STATUS DA ROTA
+========================= */
+
+.route-status {
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 11px;
+
+  margin-top: 8px;
+
+  border-radius: 5px;
+
+  color: white;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.completed-status {
+  background: #16a957;
+}
+
+.current-status {
+  background: #075df5;
+}
+
+
+/* =========================
+   ENTREGA
+========================= */
+
+.delivery-item {
+  margin-top: 0;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 69px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 9px;
+
+  background: #fff;
+
+  z-index: 1000;
+}
+
+.bottom-nav button {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #050505;
+
+  cursor: pointer;
+}
+
+.bottom-nav button svg {
+  width: 29px;
+  height: 29px;
+
+  stroke-width: 1.9;
+}
+
+
+/* =========================
+   ITEM ATIVO
+========================= */
+
+.bottom-nav button.active {
+  width: 39px;
+  height: 39px;
+
+  border-radius: 7px;
+
+  background: #075df5;
+
+  color: #fff;
+}
+
+.bottom-nav button.active svg {
+  width: 28px;
+  height: 28px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 400px) {
+
+  .rastreamento-page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .route-card {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .route-status {
+    font-size: 11px;
+    padding: 0 9px;
+  }
+
+}
